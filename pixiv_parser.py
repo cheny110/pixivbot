@@ -70,7 +70,7 @@ def parseImageByUserId(userId:str="2568265",base_save_path=None):
     if not os.path.exists(base_save_path):
         os.makedirs(base_save_path)
     for i in range(len(names)):
-        ImageItem(names[i],processedUrls[i],types[i]).coroutine.run()
+        ImageItem(names[i],processedUrls[i],types[i],base_save_path).coroutine.run()
 
 
 
@@ -91,6 +91,6 @@ def parseImageByUserName(name:str='ajimita',base_save_path=None):
 
 
 if __name__=="__main__":
-   parseRankImg("weekly")
+   parseImageByUserName()
 
 

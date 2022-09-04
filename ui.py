@@ -102,7 +102,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle('pixivbot')
         self.label_title.setText(_translate("Form", "PixivBot"))
         self.label_site.setText(_translate("Form", "chenycherry.top"))
         self.label_rank.setText(_translate("Form", "Parse ranks "))
@@ -110,7 +110,7 @@ class Ui_Form(object):
         self.comboBox_rank.setPlaceholderText(_translate("Form", "Daily"))
         self.lineEdit_path.setPlaceholderText(_translate("Form", "~/downloads"))
         self.label_3.setText(_translate("Form", "Save to"))
-        self.lineEdit_name.setPlaceholderText(_translate("Form", "Username"))
+        self.lineEdit_name.setPlaceholderText(_translate("Form", "ajimita"))
         self.pushButton_rank.setText(_translate("Form", "Parse"))
         self.pushButton_name.setText(_translate("Form", "Parse"))
 
@@ -135,6 +135,9 @@ class Ui_Form(object):
 
     def parseByName(self):
         artistName=self.lineEdit_name.text()
+        print(artistName)
+        if artistName is '':
+            artistName="ajimita" #default artist name
         path=self.checkSavePath()
         #TODO(call relevant api)
         if path is not None:
