@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color:rgb(201, 255, 253);
+}
+QcomboBox{
+	background-color:rgb(0, 255, 255);
+	font-weight:10;
+}
+QLineEdit{
+	background-color:rgb(237, 237, 237);
+	border:2px,solid,gray;
+	border-radius:10%;
+	border-width:2px;
+}
+QPushButton{
+	background-color:rgb(0, 170, 255);
+	border:0px;
+	border-radius:15%;
+}
+QPushButton:hover{
+	background-color:rgb(0, 85, 255)
+}</string>
+  </property>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PixivBot</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_site">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>450</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>chenycherry.top</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_rank">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Parse ranks </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>250</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Parse by name</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_rank">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>160</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>3</number>
+   </property>
+   <property name="maxCount">
+    <number>3</number>
+   </property>
+   <property name="placeholderText">
+    <string>Daily</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_path">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>70</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>~/downloads</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>70</y>
+     <width>59</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save to</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_name">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>340</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Username</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_rank">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>160</y>
+     <width>100</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Parse</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_name">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>340</y>
+     <width>100</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color:rgb(85, 255, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Parse</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
